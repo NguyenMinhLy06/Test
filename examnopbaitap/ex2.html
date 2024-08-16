@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="ngay">
+<button onclick="on()">La Thu May</button>
+<script>
+  function on(){
+    let thu = document.getElementById('ngay').value;
+      if (thu == 1){
+        document.write('chunhat')
+      } else if (thu == 2){
+        document.write('thuhai');
+      } else if (thu == 3){
+        document.write('thuba')
+    } else if (thu == 4){
+        document.write('thutu')
+      } else if (thu == 5){
+          document.write('thunam')
+      }
+      else if (thu == 6){
+              document.write('thusau')
+      } else if (thu == 7) {
+          document.write('thubay')
+      } else  {
+          document.write('KhongPhaiNgayTrongTuan')
+      }
+
+  }
+</script>
+</body>
+</html>

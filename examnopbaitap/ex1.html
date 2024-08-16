@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="diemthi">
+<button onclick="on()">DiemThiModule</button>
+<script>
+    function on(){
+        let diem = document.getElementById('diemthi').value
+        if (diem >= 75){
+            document.write('PassModule')
+        } else{
+            document.write('MissModule')
+        }
+    }
+</script>
+
+</body>
+</html>
