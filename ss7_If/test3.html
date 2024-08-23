@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<!-- nhập tháng-->
+<script>
+    //tháng 1,3,5,7,10,12 có 31 ngày
+    //tháng 4,6,9,11 có 30 ngày
+    // tháng 2 có 28 hoặc 29 ngày
+    let thang = +prompt("Nhap thang ")
+    let nam = +prompt("Nhap nam")
+    if (thang>0 && thang<=12 && !isNaN(thang)) {
+        if (thang == 1 || thang == 3 || thang == 5 || thang == 7 || thang == 10 || thang == 12){
+            alert(`thang ${thang} co 30 ngay `)
+        } else if ((nam%400==0 || (nam%4 && nam%100 !==0) )==2){
+            alert("thang2 trong nam nhuan co 29 ngay")
+        } else {
+            alert(` thang ${thang} co 31 ngay`)
+        }
+
+    } else {
+        alert('Ban da nhap sai')
+    }
+</script>
+
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="so1">
+<input type="number" id="so2">
+<br>
+<br>
+<button value="1">Addition(+)</button>
+<button value="2">Subtraction(-)</button>
+<button value="3">Multiplication(*)</button>
+<button value="4">Division(/)</button>
+<br>
+<button onclick="on()">Result</button>
+
+<script>
+  function on(){
+    let nhap1 = document.getElementById('so1').value
+    let nhap2 = document.getElementById('so2').value
+    if (onkeypress() ){
+      alert(nhap1+nhap2);
+    }
+
+
+
+  }
+</script>
+
+</body>
+</html>
