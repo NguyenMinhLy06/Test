@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   num = +prompt("mời bạn nhập số cần tính giai thừa :")
+     while (!(parseInt(num) === num) && num >0){
+         num = +prompt("mời bạn nhập laị số: ")
+     }
+     let temp = 1
+     //vd 6*5*4*3*2*1
+     for (let i = num ; i >=1; i++){
+         temp *= i  ;
+     }
+     console.log(temp)
+</script>
+
+</body>
+</html>

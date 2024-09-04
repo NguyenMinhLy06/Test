@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const arr = [];
+    let isX = true;
+    for (let i = 0 ; i<5 ; i++){
+        arr[i] = []
+        for (let j = 0 ; j<5; j++){
+            arr[i][j] = "";
+        }
+    }
+
+    // hiển thị bàn cờ
+    let board = "<table border='1' style='width: 500px; height: 500px'>"
+    for (let i =0 ; i < 5; i ++){
+        board += "<tr>"
+        for (let j = 0 ; j < 5 ; j++){
+            board += `<td onclick="changeValue(${i}, ${j})">${arr[i][j]}</td>`
+        } board += "</tr>"
+    }
+    board += "</table>"
+    document.write(board)
+
+    function changeValue(i,j) {
+        if ( arr[i][j] == ""){
+        if (isX){
+            arr [i][j]="X"
+        }else {
+            arr [i][j]="O"
+        }
+        isX = !isX
+        let board = "<table border='1' style='width: 500px; height: 500px'>"
+        for (let i =0 ; i < 5; i ++){
+            board += "<tr>"
+            for (let j = 0 ; j < 5 ; j++){
+                board += `<td onclick="changeValue(${i}, ${j})" STYLE="height: 100px ; width: 100px ; text-align: center; font-size: 30px">${arr[i][j]}</td>`
+            } board += "</tr>"
+        }
+        board += "</table>"
+        document.body.innerHTML="";
+        document.write(board)
+            checkWin()
+
+    }}
+
+    function checkWin(){
+        for (let i = 0 ; i<5;i++){
+            for (let j =0; j <5; j++){
+                if ( arr[i][j]=== arr[i][j+1] && arr[i][j+1]===arr[i][j+2] && arr[i][j]!==""){
+                    alert("X win")
+                }
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>

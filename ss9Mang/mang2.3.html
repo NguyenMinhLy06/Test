@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let chu = prompt("mời bạn nhập chữ :");
+  let nhap = chu.toString();
+  let str = [];
+ let UPPER = 'ABCDEFGHIGKLMNOPQRSTUVWXYX'
+  let LOWER = 'abcdefghigklmnopqrstuvwxyx'
+  for (let i = 0 ; i <nhap.length; i ++){
+    if (UPPER.indexOf(nhap[i]) !== -1){
+      str.push[nhap[i].toLowerCase()]
+    }
+else if(LOWER.indexOf(nhap[i]) !== -1){
+  str.push[nhap[i].toUpperCase()]
+    }
+else {
+  str.push(nhap[i]);
+    }
+  }
+  console.log(str);
+</script>
+
+
+</body>
+</html>

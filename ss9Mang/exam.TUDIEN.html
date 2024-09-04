@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="exam2.js"></script>
+</head>
+<body>
+<script>
+    const dictionary = {
+        "hello":"xin chào",
+        "goodbye": "tạm biệt",
+        "thank you" : "cảm ơn ",
+        "please":"làm ơn",
+        "sorry":"xin lỗi"
+
+    };
+while (true){
+    let input = prompt("mời bạn nhập từ để dịch sang tiếng việt:(hoặc bấm 'exit'để thoát) ");
+    if (input.toLowerCase()== 'exit'){
+        break;
+    }
+        let meaning = translate_word(input);
+
+alert(meaning);}
+</script>
+
+</body>
+</html>

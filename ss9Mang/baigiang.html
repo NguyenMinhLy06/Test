@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ /*   // cách 1
+     let diem = [10,9,7,9,10 ];
+     alert(diem[5]);
+
+  */
+ /*
+// cách 2
+    let scoreOfLy = new Array(5)
+    alert(scoreOfLy[4]);
+    //nếu nhâập môt số thì đó là s lượng các phần tử ban đầu
+    // nếu nhập nhìu số thì đó là cacs phần tử
+    // giá trị số 4 là underfine vì ch được khai báo các phần tử
+    console.log(scoreOfLy)
+*/
+ let diemthi = [12,9,7,9,10];
+// thêm vào cuối:
+ diemthi.push(7,0);
+console.log(diemthi)
+
+ // thêm vào đầu
+ diemthi.unshift(5);
+console.log(diemthi)
+
+ // xoá phần tử ở cuối
+ diemthi.pop();
+console.log(diemthi)
+
+//xoá đầu mảng
+ diemthi.shift();
+ console.log(diemthi);
+
+ //xoá ở vị trí bất kì
+ diemthi.splice(2,1);
+ //chúng ta sẽ xoá 1 phần tử bắt đầu từ phần từ số 2
+ console.log(diemthi);
+
+ //chèn 1 số vào 1 vị trí ất kì
+ // chèn số 3 vào v trí số 2 trong mảng
+ diemthi.splice(2,0,3);
+ console.log(diemthi);
+
+ // sắp xếp
+ // nếu để v thì nó sẽ so sánh các chữ số đầu tiên rồi đến số chữ số thứ 2
+ diemthi.sort();
+ console.log(diemthi);
+
+
+ //sắp xếp theo thứ tự
+ diemthi.sort(function (a,b) {
+     return a-b
+ })
+ console.log(diemthi);
+
+ //sắp xếp ngược lại
+ diemthi.sort( function (a,b) {
+         return b - a
+     }
+ )
+ console.log(diemthi);
+
+
+ // hiển thị tất cả điểm của học sinh
+ for (let i = 0;i<diemthi.length;i++){
+     document.write(diemthi[i])
+     document.write("<br>")
+ }// cú pháp hoi dài
+
+ // cú pháp ngắn hơn
+ // nhưng nó sẽ chạy từ đầu đến cuối chứ không thể bắt đầu ở giữa như "for index"
+ for (let i in diemthi){
+     document.write(diemthi[i])
+ }
+
+// cú pháp ngăn hơn nx
+ for (let item of diemthi){
+     document.write(item)
+ }
+
+ //for index bắt đầu từ giữ về cuôi
+ for (let i = diemthi/2; i<diemthi.length;i++){
+     document.writeln(diemthi[i])
+ }
+ document.write("<br>")
+
+ // viết ngược lại
+ for (let i = diemthi.length-1;i>=0;i--){
+     document.writeln(diemthi[i])
+ }
+
+
+ // Mảng 2 chiều
+ let score = [[10,9,7,5],[9,8,0,4,10],[],[],[]]
+alert(score[1][1]);
+
+
+
+</script>
+
+
+</body>
+</html>

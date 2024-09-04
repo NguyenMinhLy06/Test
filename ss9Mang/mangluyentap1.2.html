@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function isDuplicate(number,array){
+    return array.includes(number)
+  }
+  let array = [];
+  let MaxValue
+  let Maxindex 
+  for (let i = 0 ; i<10;i++){
+    let num = parseInt(prompt("mời bạn nhập số"+(i+1)+":"));
+    if (!isNaN(num) && !isDuplicate(num,array)){
+      array.push(num)
+    }else {
+      alert("mời bạn nhập lại : ")
+    }
+    let MaxValue = num[0]
+    let Maxindex = 0;
+  if (num[i]>MaxValue){
+    MaxValue = num[i];
+    Maxindex = i
+  }
+  }
+  console.log("Phần tử lớn nhất trong mảng là: " + MaxValue);
+  console.log("Vị trí của phần tử lớn nhất là: " + Maxindex);
+
+</script>
+
+</body>
+</html>
